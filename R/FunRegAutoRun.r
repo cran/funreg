@@ -1,1 +1,1 @@
-setLoadAction(function(ns) {cat("funreg Package for Functional Regression\n")});
+setLoadAction(function(ns) {packageStartupMessage("funreg Package for Functional Regression\n")});

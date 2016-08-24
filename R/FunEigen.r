@@ -5,7 +5,7 @@
 #' written on Nov. 13, 2009, by Jeff Goldsmith; Goldsmith noted that he used some code from Chongzhi Di for the part about
 #' handling sparsity.  "sparse_simulation.R" was part of the supplementary material for
 #' Goldsmith, Bobb, Crainiceanu, Caffo, and Reich (2011).  The  sample code can be
-#'    found at \url{http://www.jeffgoldsmith.com/Downloads/PFR_Web_Appendix.zip}.
+#'    found at \url{http://www.jeffgoldsmith.com/Downloads/PFR_Code.zip}.
 #' The \code{num.bins} parameter corresponds to  \code{N.fit} in Goldsmith et al, \code{sparse_simulation.R} and 
 #' \code{preferred.num.eigenfunctions} corresponds to \code{Kz} in Goldsmith et al.
 #' @param id A vector of subject ID's.
@@ -18,7 +18,7 @@
 #' covariance function of x (see Goldsmith et al., 2011)
 #'@references  Goldsmith, J., Bobb, J., Crainiceanu, C. M., Caffo, B., and Reich, D.
 #'    (2011). Penalized functional regression. Journal of Computational
-#'    and Graphical Statistics, 20(4), 830-851. 
+#'    and Graphical Statistics, 20(4), 830-851. DOI: 10.1198/jcgs.2010.10007.
 #' @seealso \code{\link{fitted.funeigen}}, \code{link{plot.funeigen}}
 #'@importFrom mgcv gam
 #'@importFrom mgcv s
