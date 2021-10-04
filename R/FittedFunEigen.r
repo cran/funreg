@@ -26,7 +26,6 @@
 #' @references  Goldsmith, J., Bobb, J., Crainiceanu, C. M., Caffo, B., and Reich, D.
 #'    (2011). Penalized functional regression. Journal of Computational
 #'    and Graphical Statistics, 20(4), 830-851. DOI: 10.1198/jcgs.2010.10007.
-#' @S3method fitted funeigen  
 #' @method fitted funeigen  
 #' @export
 fitted.funeigen <- function(object,type="functions",...) {

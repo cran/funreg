@@ -7,8 +7,7 @@
 #' @param ... Other arguments that may be passed from another method.
 #' @return At least for now, this is identical to the \code{summary.funreg}
 #' function. 
-#'@export 
-#'@S3method coef funreg
+#'@export
 #'@method coef funreg
 coef.funreg <- function(object, 
                            digits=4,

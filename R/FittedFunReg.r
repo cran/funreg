@@ -14,7 +14,7 @@
 #' or the fitted values for the correlations of the 
 #' \code{which.coef}th functional covariate with the
 #' response, if \code{type} is \code{correlation}.
-#' @S3method fitted funreg 
+#' @importFrom stats cor fitted
 #' @method fitted funreg 
 #' @export
 fitted.funreg <- function(object,type="response",which.coef=1,...) {

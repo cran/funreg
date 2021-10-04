@@ -16,7 +16,7 @@
 #' @param ylab Label for the y axis of the plot.
 #' @param ... Other optional arguments to be passed on to the plot function.
 #' @export
-#' @S3method plot funeigen
+#' @importFrom graphics abline contour lines par text title
 #' @method plot funeigen
 plot.funeigen <- function(x,
                           type="correlation",

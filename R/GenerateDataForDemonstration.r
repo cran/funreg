@@ -42,6 +42,7 @@
 #' deleting from the dataset those observations having 
 #' \code{include.in.subsample==FALSE}.
 #' @importFrom mvtnorm rmvnorm
+#' @importFrom stats rnorm rbinom
 #'@export
 generate.data.for.demonstration <- function(nsub=400,
                       b0.true=-5,

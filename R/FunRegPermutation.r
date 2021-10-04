@@ -22,16 +22,14 @@
 #' Ramsay, J. O., Hooker, G., & Graves, S. (2009). Functional
 #'           data analysis with R and MATLAB. NY: Springer.
 #' 
-#' Sen, S. (2014) Permutation Tests. Available at
-#'  \url{http://www.biostat.ucsf.edu/sen/statgen14/permutation-tests.html}
+#' Sen, S. (2014) Permutation Tests. 
 #' 
 #' @return Returns a list with several components. First, 
 #' \code{pvalue.F} is the p-value for the F test.  Second, \code{conf.int.for.pvalue.F} is
 #' the confidence interval for estimating the p-value that would
 #' be obtained from the dataset as \code{num.permute} approached infinity. 
 #' The idea of a confidence interval for a p-value is explained further by 
-#' Sen (2013), with a STATA example.  See "Permutation Tests" by Saunak Sen (2013) at
-#' http://www.epibiostat.ucsf.edu/biostat/sen/statgen/permutation.html.
+#' Sen (2013), with a STATA example. 
 #' Third, \code{orig.F} is the F statistic calculated on the original
 #' dataset. Last, \code{permuted.F} is the vector of F statistics calculated
 #' on each of the random permuted datasets.  Also included are \code{pvalue.LR},
@@ -50,6 +48,7 @@
 #' over the total number of datasets plus one.  Adding one to the numerator
 #' and denominator is suggested by some authors, partly  in order to prevent
 #' a nonsensical zero p-value (Onghena & May, 1995; Phipson, Belinda & Smyth, 2010).
+#' @importFrom stats fitted var logLik binom.test 
 #'@export
 funreg.permutation <- function(object,num.permute=500,seed=NULL) {
     stopifnot(class(object)=="funreg");

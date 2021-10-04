@@ -14,8 +14,8 @@
 #' functional coefficients at each of a grid of time points.  Fourth, 
 #' \code{subject.level.covariates.table} provides estimated values for 
 #' subject-level covariates if any are in the model. 
-#'@export
-#'@S3method summary funreg
+#' @export
+#' @importFrom stats pnorm 
 #'@method summary funreg
 summary.funreg <- function(object, 
                            digits=4,

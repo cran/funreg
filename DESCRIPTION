@@ -1,14 +1,14 @@
 Package: funreg
 Type: Package
 Title: Functional Regression for Irregularly Timed Data
-Version: 1.2
-Date: 2016-08-22
+Version: 1.2.2
+Date: 2021-10-01
 Authors@R: c(person("John", "Dziak",
     role = c("aut", "cre"),
-    email = "jjd264@psu.edu"),
+	comment = c(ORCID = "0000-0003-0762-5495"),
+    email = "dziakj1@gmail.com"),
     person("Mariya", "Shiyko",
-    role = "aut",
-    email = "M.Shiyko@neu.edu"))
+    role = "aut"))
 Depends: R (>= 2.15.0)
 Imports: MASS, mgcv, mvtnorm, splines
 Copyright: The Pennsylvania State University and Northeastern
@@ -28,19 +28,23 @@ Description: Performs functional regression, and some related
     the significance of the functional predictor.  The heuristic interpretation
     of ``time'' is used to describe the index of the functional predictor, but
     the same methods can equally be used for another unidimensional continuous
-    index, such as space along a north-south axis.  The development of this
-    package was part of a research project supported by Award R03 CA171809-01
-    from the National Cancer Institute and Award P50 DA010075 from the National
-    Institute on Drug Abuse. The content is solely the responsibility of the
+    index, such as space along a north-south axis.  Note that most of the functionality
+	of this package has been superseded by added features after 2016 in the 'pfr' function by
+    Jonathan Gellar, Mathew W. McLean, Jeff Goldsmith, and Fabian Scheipl, in the 
+	'refund' package built by Jeff Goldsmith and co-authors and maintained by Julia Wrobel.
+	The development of the funreg package in 2015 and 2016 was part of a research 
+	project supported by Award R03 CA171809-01 from the National Cancer Institute and Award P50 
+	DA010075 from the National Institute on Drug Abuse. The content is solely the responsibility of the
     authors and does not necessarily represent the official views of the
     National Institute on Drug Abuse, the National Cancer Institute, or the
     National Institutes of Health.
 License: GPL (>= 2)
 LazyData: true
-Packaged: 2016-08-24 15:50:40 UTC; jjd264
-Author: John Dziak [aut, cre],
-  Mariya Shiyko [aut]
-Maintainer: John Dziak <jjd264@psu.edu>
+Maintainer: John Dziak <dziakj1@gmail.com>
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2016-08-24 18:38:32
+RoxygenNote: 7.1.1
+Packaged: 2021-10-02 01:37:25 UTC; JJD
+Author: John Dziak [aut, cre] (<https://orcid.org/0000-0003-0762-5495>),
+  Mariya Shiyko [aut]
+Date/Publication: 2021-10-04 09:30:05 UTC

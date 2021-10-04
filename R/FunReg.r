@@ -11,7 +11,9 @@
 #' B-splines from Eilers and Marx (1996) in implementing B-splines.
 #' As the pfr function in refund also does, the function calls
 #' the gam function in the mgcv package (Wood 2011) to do much of the
-#' internal calculations.
+#' internal calculations. This function may be somewhat obselete, because
+#' a more flexible function is available in the new version of pfr in
+#' the refund package (see \url{http://jeffgoldsmith.com/software.html}). 
 #' @param id An integer or string uniquely identifying the
 #' subject to which each observation belongs
 #' @param response The response, as a vector, one for each subject
@@ -70,6 +72,7 @@
 #' @param times.for.fit.grid  Points at which to calculate
 #' the estimated beta function.  The default, NULL, means that the
 #' code will choose these times automatically.
+#' @importFrom stats var gaussian binomial
 #' @return An object of type \code{funreg}.  This object 
 #' can be examined using \code{summary}, \code{print},
 #'  or \code{fitted}.
@@ -82,10 +85,9 @@
 #'
 #'  Goldsmith, J., Bobb, J., Crainiceanu, C. M., Caffo, B., and Reich, D.
 #'    (2011). Penalized functional regression. Journal of Computational
-#'    and Graphical Statistics, 20(4), 830-851. DOI: 10.1198/jcgs.2010.10007. The sample code can be
-#'    found at www.jeffgoldsmith.com/Downloads/PFR_Code.zip;
-#'    in writing parts of this function I especially followed "PFR_Example.R",
-#'    written on Jan. 15 2010, by Jeff Goldsmith.
+#'    and Graphical Statistics, 20(4), 830-851. DOI: 10.1198/jcgs.2010.10007.
+#'    For writing parts of this function I especially followed "PFR_Example.R",
+#'    in the supplemental materials for this paper, written on Jan. 15 2010, by Jeff Goldsmith.
 #' 
 #'  Ruppert, D., Wand, M., and Carroll, R. (2003). Semiparametric regression.
 #'    Cambridge, UK: Cambridge University Press.

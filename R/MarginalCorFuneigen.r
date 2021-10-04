@@ -16,7 +16,7 @@
 #'  smoothed value of x(t). 
 #' @references Shen, D., and Lu, Z. (2006). Computation of correlation coefficient
 #' and its confidence interval in SAS (r). SUGI 31 (March 26-29, 2006), paper 170-31. Available online at 
-#' \url{http://www2.sas.com/proceedings/sugi31/170-31.pdf}.
+#' \url{https://support.sas.com/resources/papers/proceedings/proceedings/sugi31/170-31.pdf}.
 #' @return Returns a \code{data.frame} with four columns. 
 #'  The first, \code{time}, is the time index of the rows.  
 #'  That is, it is a grid of points t along the time axis and
@@ -27,6 +27,7 @@
 #'  We refer to the correlation function estimated here as marginal because
 #' it ignores any other functional covariates (rather than 
 #' trying to adjust or control for them).
+#' @importFrom stats fitted cor qnorm
 #'@export
 marginal.cor.funeigen <- function(object, 
                                   id,  

@@ -4,8 +4,7 @@
 #' @note  The algorithm for this function follows that of "sparse_simulation.R", which was
 #' written on Nov. 13, 2009, by Jeff Goldsmith; Goldsmith noted that he used some code from Chongzhi Di for the part about
 #' handling sparsity.  "sparse_simulation.R" was part of the supplementary material for
-#' Goldsmith, Bobb, Crainiceanu, Caffo, and Reich (2011).  The  sample code can be
-#'    found at \url{http://www.jeffgoldsmith.com/Downloads/PFR_Code.zip}.
+#' Goldsmith, Bobb, Crainiceanu, Caffo, and Reich (2011).
 #' The \code{num.bins} parameter corresponds to  \code{N.fit} in Goldsmith et al, \code{sparse_simulation.R} and 
 #' \code{preferred.num.eigenfunctions} corresponds to \code{Kz} in Goldsmith et al.
 #' @param id A vector of subject ID's.
@@ -23,6 +22,7 @@
 #'@importFrom mgcv gam
 #'@importFrom mgcv s
 #'@importFrom MASS ginv
+#'@importFrom stats predict cov var
 #'@export
 funeigen <- function(id,
                      time,

@@ -15,7 +15,7 @@
 #' the scalar outcome (presumably taken at a single
 #'  time) will be plotted instead.
 #'@export
-#'@S3method plot funreg
+#' @importFrom graphics abline contour lines par text title
 #'@method plot funreg
 plot.funreg <- function(x,
                         frames=FALSE, 
